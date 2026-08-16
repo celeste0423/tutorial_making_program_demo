@@ -1,0 +1,5 @@
+node_modules/
+.video-temp/
+demo-page.png
+demo-page-2.png
+dist/

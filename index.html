@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capture Work | Hackathon Demo</title>
+    <meta
+      name="description"
+      content="한 번의 업무 수행을 실행 가능한 표준업무로 바꾸는 프로세스 캡처 도구 데모"
+    />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=SUIT:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <div class="brand">
+            <span class="brand-mark">CW</span>
+            <div>
+              <strong>Capture Work</strong>
+              <p>Process Capture Tool</p>
+            </div>
+          </div>
+          <div class="topbar-actions">
+            <a href="#demo" class="ghost-button">Watch Demo</a>
+            <a href="#plan" class="primary-button">Launch MVP</a>
+          </div>
+        </nav>
+
+        <section class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Record clicks? No. Capture work.</p>
+            <h1>업무를 수행하는 순간, 그 과정을 실행 가능한 표준업무로 변환합니다.</h1>
+            <p class="hero-description">
+              사용자의 실제 업무 흐름을 클릭 위치, 앱 전환, 첨부, 제출, 판단 지점까지
+              구조화하고, 나중에는 초보자 화면 위에 그대로 재생하는 해커톤용 MVP입니다.
+            </p>
+            <div class="cta-row">
+              <a href="#demo" class="primary-button">데모 보기</a>
+              <a href="#workflow" class="ghost-button">시나리오 확인</a>
+            </div>
+            <ul class="hero-points">
+              <li>한 번의 업무 수행 → 5~10개 카드형 단계 자동 생성</li>
+              <li>스크린샷 + 클릭 강조 + AI 요약 + 주의사항 동시 기록</li>
+              <li>재생 시 실제 버튼 위치를 라이브 오버레이로 안내</li>
+            </ul>
+          </div>
+
+          <div class="hero-stage">
+            <div class="stage-window">
+              <div class="window-bar">
+                <span></span><span></span><span></span>
+                <p>Capture Session / Purchase Request</p>
+              </div>
+              <div class="stage-canvas">
+                <div class="canvas-app-list">
+                  <div class="app-pill is-active">Excel</div>
+                  <div class="app-pill">ERP</div>
+                  <div class="app-pill">Explorer</div>
+                  <div class="app-pill">Mail</div>
+                </div>
+                <div class="canvas-shot">
+                  <div class="shot-header">
+                    <span>Step 02</span>
+                    <strong>구매 요청 등록</strong>
+                  </div>
+                  <div class="shot-surface">
+                    <div class="red-focus focus-erp"></div>
+                    <div class="mock-field field-a"></div>
+                    <div class="mock-field field-b"></div>
+                    <div class="mock-button">저장 후 제출</div>
+                  </div>
+                </div>
+                <div class="canvas-cards">
+                  <article class="mini-card">
+                    <span>자동 기록</span>
+                    <strong>창 제목, 앱 전환, 붙여넣기, 첨부</strong>
+                  </article>
+                  <article class="mini-card warning">
+                    <span>AI 주의사항</span>
+                    <strong>VAT 포함 여부를 확인하세요</strong>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="metrics">
+          <article>
+            <strong>4개 앱</strong>
+            <p>Excel → ERP → 파일 탐색기 → 메일 흐름을 하나의 업무로 묶습니다.</p>
+          </article>
+          <article>
+            <strong>7개 단계</strong>
+            <p>자동 생성된 카드 단계를 수정, 병합, 삭제하며 데모용 SOP를 완성합니다.</p>
+          </article>
+          <article>
+            <strong>3회 반복 탐지</strong>
+            <p>반복 입력과 불필요한 왕복을 감지해 개선 포인트까지 보여줍니다.</p>
+          </article>
+        </section>
+
+        <section id="demo" class="demo-section">
+          <div class="section-heading">
+            <p class="eyebrow">Interactive Demo Reel</p>
+            <h2>영상 대신 가볍게 재생되는 데모 플레이어</h2>
+            <p>
+              해커톤 데모에서는 무거운 녹화본 대신, 동일한 스토리보드를 웹에서 바로 재생해
+              메시지를 선명하게 보여줍니다.
+            </p>
+          </div>
+
+          <div class="video-frame">
+            <div class="video-copy">
+              <span>Demo Video</span>
+              <h3>심사위원에게 바로 보여줄 15초 요약 영상</h3>
+              <p>
+                실제 서비스 구현 대신, 캡처 시작부터 따라 하기 모드 생성까지 한 번에 보여주는
+                짧은 데모 릴입니다.
+              </p>
+            </div>
+            <video
+              class="demo-video"
+              src="./assets/demo-reel.webm"
+              controls
+              autoplay
+              muted
+              loop
+              playsinline
+            ></video>
+          </div>
+
+          <div class="demo-player">
+            <div class="player-screen">
+              <div class="player-toolbar">
+                <button id="play-toggle" class="play-button" type="button">Pause</button>
+                <div class="timeline">
+                  <div id="timeline-progress" class="timeline-progress"></div>
+                </div>
+                <span id="step-counter">01 / 07</span>
+              </div>
+              <div class="player-stage">
+                <div class="desktop-frame">
+                  <div class="desktop-topline">
+                    <span id="shot-app">Excel</span>
+                    <strong id="shot-title">구매 대상 확인</strong>
+                  </div>
+                  <div id="shot-scene" class="desktop-scene scene-excel">
+                    <div id="focus-box" class="red-focus focus-excel"></div>
+                    <div class="sheet-grid"></div>
+                    <div class="scene-label">승인 상태 품목 선택</div>
+                  </div>
+                </div>
+                <aside class="guide-panel">
+                  <div class="guide-chip">Live Coach</div>
+                  <h3 id="guide-title">구매 대상 확인</h3>
+                  <p id="guide-body">
+                    승인 완료된 품목만 선택합니다. 완료 조건은 승인 여부와 품목번호 확인입니다.
+                  </p>
+                  <div class="guide-warning" id="guide-warning">중요: 상태값이 승인인지 먼저 체크</div>
+                  <ul id="guide-signals" class="signal-list"></ul>
+                </aside>
+              </div>
+            </div>
+
+            <div class="player-cards" id="player-cards"></div>
+          </div>
+        </section>
+
+        <section id="workflow" class="workflow-section">
+          <div class="section-heading">
+            <p class="eyebrow">Card-first UX</p>
+            <h2>타임라인 대신 업무 카드로 편집합니다</h2>
+            <p>
+              영상 편집기처럼 길게 나열하지 않고, PowerPoint 편집 난이도에 맞춘 카드 UX로
+              해커톤 메시지를 명확하게 전달합니다.
+            </p>
+          </div>
+
+          <div class="workflow-grid">
+            <article class="workflow-card">
+              <div class="card-topline">
+                <span>1. 구매 대상 확인</span>
+                <em>Excel</em>
+              </div>
+              <p>승인 상태인 품목을 선택합니다.</p>
+              <small>완료 조건: 승인 여부와 품목번호 확인</small>
+            </article>
+            <article class="workflow-card">
+              <div class="card-topline">
+                <span>2. 구매 요청 등록</span>
+                <em>ERP</em>
+              </div>
+              <p>품목번호와 수량을 입력한 뒤 저장 후 제출합니다.</p>
+              <small>주의: VAT 포함 여부를 다시 확인</small>
+            </article>
+            <article class="workflow-card">
+              <div class="card-topline">
+                <span>3. 견적서 첨부</span>
+                <em>탐색기</em>
+              </div>
+              <p>최근 30일 내 견적서를 첨부합니다.</p>
+              <small>검증: 파일명과 발행일 확인</small>
+            </article>
+            <article class="workflow-card">
+              <div class="card-topline">
+                <span>4. 담당자 통보</span>
+                <em>Mail</em>
+              </div>
+              <p>생성된 구매번호와 첨부 완료 사실을 메일로 전달합니다.</p>
+              <small>완료 조건: 구매번호와 수신자 확인</small>
+            </article>
+          </div>
+        </section>
+
+        <section class="feature-section">
+          <div class="section-heading">
+            <p class="eyebrow">MVP Scope</p>
+            <h2>해커톤에서 보여줄 기능만 남겼습니다</h2>
+          </div>
+          <div class="feature-grid">
+            <article>
+              <h3>입력 UI</h3>
+              <p>업무 시작, 업무명 입력, 중요/주의/판단 핫키, 기록 종료.</p>
+            </article>
+            <article>
+              <h3>자동 감지</h3>
+              <p>활성 프로그램, 창 제목, 앱 전환, 복사/붙여넣기, 저장/제출, 첨부 이벤트.</p>
+            </article>
+            <article>
+              <h3>결과 화면</h3>
+              <p>5~10개 카드 단계 생성, 합치기/삭제/이름 수정, 주의사항 자동 표시.</p>
+            </article>
+            <article>
+              <h3>따라 하기 모드</h3>
+              <p>실제 버튼 주변을 강조하며 단계별로 재생하는 초보자 안내 모드.</p>
+            </article>
+            <article>
+              <h3>반복 탐지</h3>
+              <p>같은 입력 3건 이상, 불필요한 왕복, 앱 간 이동 흐름을 개선 포인트로 제시.</p>
+            </article>
+            <article>
+              <h3>스토리텔링</h3>
+              <p>Capture Work라는 정의로 녹화 기술보다 구조화와 재생 경험을 강조.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="plan" class="plan-section">
+          <div class="section-heading">
+            <p class="eyebrow">Build Plan</p>
+            <h2>데모 제작부터 GitHub 업로드까지</h2>
+          </div>
+          <div class="plan-list">
+            <article>
+              <span>01</span>
+              <div>
+                <h3>스토리 고정</h3>
+                <p>구매 요청 시나리오를 기준으로 캡처, 편집, 재생의 세 장면을 구성합니다.</p>
+              </div>
+            </article>
+            <article>
+              <span>02</span>
+              <div>
+                <h3>소개 페이지 제작</h3>
+                <p>핵심 카피, 카드형 업무 흐름, 인터랙티브 데모 플레이어를 구현합니다.</p>
+              </div>
+            </article>
+            <article>
+              <span>03</span>
+              <div>
+                <h3>GitHub Pages 배포</h3>
+                <p>Actions로 정적 사이트를 자동 배포해 심사위원이 바로 접근할 수 있게 합니다.</p>
+              </div>
+            </article>
+            <article>
+              <span>04</span>
+              <div>
+                <h3>발표 스크립트 연결</h3>
+                <p>한 번의 업무 수행이 SOP와 라이브 가이드로 바뀌는 장면을 60초 안에 시연합니다.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+  </html>
