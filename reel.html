@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capture Work Reel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=SUIT:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reel.css" />
+  </head>
+  <body>
+    <main class="reel-shell">
+      <header class="reel-topbar">
+        <div class="reel-brand">
+          <span class="brand-mark">CW</span>
+          <div>
+            <strong>Capture Work</strong>
+            <p>Purchase Request Walkthrough</p>
+          </div>
+        </div>
+        <div class="reel-status">
+          <span class="status-dot"></span>
+          <strong>Capture to Guide</strong>
+        </div>
+      </header>
+
+      <section class="reel-stage">
+        <div class="stage-copy">
+          <p id="reel-step" class="reel-step">01</p>
+          <h1 id="reel-title">구매 요청 등록을 캡처합니다</h1>
+          <p id="reel-body">
+            ERP 입력, 첨부, 저장 후 제출과 같은 실제 업무 맥락을 하나의 흐름으로 모읍니다.
+          </p>
+          <ul id="reel-points" class="reel-points"></ul>
+        </div>
+
+        <div class="stage-visual">
+          <div class="visual-frame">
+            <img id="reel-image" src="./assets/capture-hero.png" alt="Capture Work reel" />
+            <div id="reel-focus" class="reel-focus focus-capture"></div>
+          </div>
+          <div id="reel-callout" class="reel-callout">
+            <span>Capture</span>
+            <strong>저장 후 제출 위치를 함께 기록</strong>
+          </div>
+        </div>
+      </section>
+
+      <footer class="reel-footer">
+        <div class="footer-track">
+          <div id="reel-progress" class="footer-progress"></div>
+        </div>
+        <div class="footer-tags">
+          <span>Capture</span>
+          <span>Structure</span>
+          <span>Replay</span>
+        </div>
+      </footer>
+    </main>
+
+    <script type="module" src="./reel.js"></script>
+  </body>
+  </html>

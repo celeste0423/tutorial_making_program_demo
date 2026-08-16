@@ -3,92 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Capture Work | Hackathon Demo</title>
+    <title>Capture Work | Process Capture Tool</title>
     <meta
       name="description"
-      content="한 번의 업무 수행을 실행 가능한 표준업무로 바꾸는 프로세스 캡처 도구 데모"
+      content="한 번의 업무 수행을 실행 가능한 표준업무로 변환하는 프로세스 캡처 도구"
     />
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=SUIT:wght@400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=SUIT:wght@400;500;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="site-bg"></div>
     <div class="page-shell">
-      <header class="hero">
+      <header class="hero-shell">
         <nav class="topbar">
-          <div class="brand">
+          <a class="brand" href="#top">
             <span class="brand-mark">CW</span>
-            <div>
+            <span class="brand-text">
               <strong>Capture Work</strong>
-              <p>Process Capture Tool</p>
-            </div>
-          </div>
-          <div class="topbar-actions">
-            <a href="#demo" class="ghost-button">제품 보기</a>
-            <a href="#plan" class="primary-button">도입 흐름</a>
+              <small>Process Capture Tool</small>
+            </span>
+          </a>
+          <div class="topbar-links">
+            <a href="#product">제품</a>
+            <a href="#experience">재생 경험</a>
+            <a href="#video">영상</a>
+            <a href="#workflow">업무 흐름</a>
           </div>
         </nav>
 
-        <section class="hero-grid">
+        <section id="top" class="hero-grid">
           <div class="hero-copy">
             <p class="eyebrow">Record clicks? No. Capture work.</p>
-            <h1>업무를 수행하는 순간, 그 과정을 실행 가능한 표준업무로 변환합니다.</h1>
+            <h1>한 번의 업무 수행을<br />실행 가능한 표준업무로 바꿉니다</h1>
             <p class="hero-description">
-              사용자의 실제 업무 흐름을 클릭 위치, 앱 전환, 첨부, 제출, 판단 지점까지
-              구조화하고, 나중에는 초보자 화면 위에 그대로 재생하는 해커톤용 MVP입니다.
+              Capture Work는 사용자의 실제 업무 화면을 앱 전환, 입력, 첨부, 제출,
+              판단 지점까지 구조화하고, 나중에는 실제 화면 위에서 다시 따라갈 수 있는
+              안내로 재생합니다.
             </p>
             <div class="cta-row">
-            <a href="#demo" class="primary-button">작동 화면 보기</a>
-            <a href="#workflow" class="ghost-button">시나리오 확인</a>
+              <a href="#video" class="primary-button">작동 영상 보기</a>
+              <a href="#experience" class="ghost-button">가이드 경험 보기</a>
             </div>
-            <ul class="hero-points">
-              <li>한 번의 업무 수행 → 5~10개 카드형 단계 자동 생성</li>
-              <li>스크린샷 + 클릭 강조 + AI 요약 + 주의사항 동시 기록</li>
-              <li>재생 시 실제 버튼 위치를 라이브 오버레이로 안내</li>
-            </ul>
+            <div class="hero-notes">
+              <span>Excel, ERP, Explorer, Mail을 하나의 업무로 연결</span>
+              <span>카드형 단계 5~10개 자동 생성</span>
+              <span>실제 버튼 강조와 초보자용 따라 하기 재생</span>
+            </div>
           </div>
 
-          <div class="hero-stage">
-            <div class="stage-window">
-              <div class="window-bar">
-                <span></span><span></span><span></span>
-                <p>Capture Session / Purchase Request</p>
-              </div>
-              <div class="stage-canvas">
-                <div class="canvas-app-list">
-                  <div class="app-pill is-active">Excel</div>
-                  <div class="app-pill">ERP</div>
-                  <div class="app-pill">Explorer</div>
-                  <div class="app-pill">Mail</div>
-                </div>
-                <div class="canvas-shot">
-                  <div class="shot-header">
-                    <span>Step 02</span>
-                    <strong>구매 요청 등록</strong>
-                  </div>
-                  <div class="shot-surface">
-                    <div class="red-focus focus-erp"></div>
-                    <div class="mock-field field-a"></div>
-                    <div class="mock-field field-b"></div>
-                    <div class="mock-button">저장 후 제출</div>
-                  </div>
-                </div>
-                <div class="canvas-cards">
-                  <article class="mini-card">
-                    <span>자동 기록</span>
-                    <strong>창 제목, 앱 전환, 붙여넣기, 첨부</strong>
-                  </article>
-                  <article class="mini-card warning">
-                    <span>AI 주의사항</span>
-                    <strong>VAT 포함 여부를 확인하세요</strong>
-                  </article>
-                </div>
-              </div>
+          <div class="hero-visual">
+            <div class="hero-frame">
+              <img
+                src="./assets/capture-hero.png"
+                alt="Capture Work 구매 요청 등록 화면"
+              />
+            </div>
+            <div class="hero-float summary-card">
+              <span>실시간 인사이트</span>
+              <strong>반복 입력 3회 탐지</strong>
+              <p>같은 금액과 공급업체명이 반복되어 개선 포인트로 기록됩니다.</p>
+            </div>
+            <div class="hero-float warning-card">
+              <span>주의사항</span>
+              <strong>결재 라우팅 확인 필요</strong>
             </div>
           </div>
         </section>
@@ -97,37 +80,88 @@
       <main>
         <section class="metrics">
           <article>
-            <strong>4개 앱</strong>
-            <p>Excel → ERP → 파일 탐색기 → 메일 흐름을 하나의 업무로 묶습니다.</p>
+            <strong>4개 업무 앱</strong>
+            <p>Excel, ERP, 파일 탐색기, 메일을 하나의 처리 흐름으로 묶습니다.</p>
           </article>
           <article>
-            <strong>7개 단계</strong>
-            <p>자동 생성된 카드 단계를 수정, 병합, 삭제하며 데모용 SOP를 완성합니다.</p>
+            <strong>7개 단계 카드</strong>
+            <p>자동 생성된 단계를 수정, 병합, 삭제하며 실행 가능한 표준업무로 정리합니다.</p>
           </article>
           <article>
-            <strong>3회 반복 탐지</strong>
-            <p>반복 입력과 불필요한 왕복을 감지해 개선 포인트까지 보여줍니다.</p>
+            <strong>라이브 재생</strong>
+            <p>다음에 같은 업무를 할 때 실제 버튼 위치를 화면 위에 다시 안내합니다.</p>
           </article>
         </section>
 
-        <section id="demo" class="demo-section">
+        <section id="product" class="story-section">
           <div class="section-heading">
-            <p class="eyebrow">Interactive Walkthrough</p>
-            <h2>한 번 수행한 업무를 다시 실행 가능한 안내로 재생합니다</h2>
+            <p class="eyebrow">Product View</p>
+            <h2>화면 캡처, 카드 편집, 라이브 가이드가 하나로 이어집니다</h2>
             <p>
-              사용자가 수행했던 업무 흐름을 단계, 주의사항, 완료 조건으로 정리하고 실제 화면
-              위에서 다시 따라갈 수 있게 보여줍니다.
+              긴 영상 편집기가 아니라, 실제 업무 수행 순간을 구조화하고 다시 실행할 수
+              있게 만드는 흐름에 집중합니다.
             </p>
           </div>
 
-          <div class="video-frame">
+          <div class="showcase-grid">
+            <article class="showcase-card wide">
+              <div class="showcase-copy">
+                <span>01. Capture</span>
+                <h3>실제 업무를 수행하는 동안 필요한 맥락을 함께 기록합니다</h3>
+                <p>
+                  활성 앱, 창 제목, 첨부 파일, 저장과 제출, 반복 입력, 판단 지점을 함께
+                  모아 업무 단위의 흐름으로 정리합니다.
+                </p>
+              </div>
+              <img src="./assets/capture-hero.png" alt="업무 캡처 화면" />
+            </article>
+
+            <article class="showcase-card">
+              <div class="showcase-copy">
+                <span>02. Structure</span>
+                <h3>타임라인 대신 업무 카드로 정리합니다</h3>
+                <p>
+                  단계 순서를 옮기고, 두 단계를 합치고, 조건을 추가하는 방식으로 표준업무를
+                  손쉽게 다듬습니다.
+                </p>
+              </div>
+              <img src="./assets/workflow-editor.png" alt="업무 카드 편집 화면" />
+            </article>
+
+            <article class="showcase-card">
+              <div class="showcase-copy">
+                <span>03. Replay</span>
+                <h3>초보자 화면 위에서 실제 버튼을 다시 강조합니다</h3>
+                <p>
+                  다음 단계, 완료 조건, 주의사항을 유지한 채 실제 업무 화면 위에서 그대로
+                  따라갈 수 있게 재생합니다.
+                </p>
+              </div>
+              <img src="./assets/live-guide.png" alt="라이브 따라 하기 가이드 화면" />
+            </article>
+          </div>
+        </section>
+
+        <section id="video" class="video-section">
+          <div class="section-heading">
+            <p class="eyebrow">Walkthrough Video</p>
+            <h2>실제 업무 화면처럼 이어지는 재생 영상</h2>
+            <p>
+              빈 박스 애니메이션이 아니라, 캡처 화면과 카드 편집 화면, 실제 재생 화면이
+              차례로 이어지는 짧은 제품 릴입니다.
+            </p>
+          </div>
+
+          <div class="video-panel">
             <div class="video-copy">
-              <span>Walkthrough Video</span>
-              <h3>캡처부터 재생까지 한 화면에서 이어지는 실제 흐름</h3>
-              <p>
-                업무 시작, 입력, 첨부, 전달까지의 흐름이 어떻게 카드형 업무 가이드로 바뀌는지
-                짧은 재생 화면으로 확인할 수 있습니다.
-              </p>
+              <strong>구매 요청 등록 시나리오</strong>
+              <ul>
+                <li>Excel에서 승인 품목 확인</li>
+                <li>ERP에서 구매 요청 등록과 저장 후 제출</li>
+                <li>견적서 첨부와 반복 입력 탐지</li>
+                <li>카드형 업무 가이드 생성</li>
+                <li>실제 화면 위에서 따라 하기 재생</li>
+              </ul>
             </div>
             <video
               class="demo-video"
@@ -137,37 +171,50 @@
               muted
               loop
               playsinline
+              poster="./assets/capture-hero.png"
             ></video>
           </div>
+        </section>
 
-          <div class="demo-player">
-            <div class="player-screen">
+        <section id="experience" class="experience-section">
+          <div class="section-heading">
+            <p class="eyebrow">Guided Playback</p>
+            <h2>실제 제품처럼 따라 하기 경험을 보여줍니다</h2>
+            <p>
+              각 단계는 설명, 완료 조건, 주의사항과 함께 현재 화면 위에 재생됩니다. 카드나
+              이미지도 정적인 설명이 아니라 실제 재생 흐름 안에서 연결됩니다.
+            </p>
+          </div>
+
+          <div class="experience-panel">
+            <div class="player-shell">
               <div class="player-toolbar">
                 <button id="play-toggle" class="play-button" type="button">Pause</button>
                 <div class="timeline">
                   <div id="timeline-progress" class="timeline-progress"></div>
                 </div>
-                <span id="step-counter">01 / 07</span>
+                <span id="step-counter">01 / 03</span>
               </div>
-              <div class="player-stage">
-                <div class="desktop-frame">
-                  <div class="desktop-topline">
-                    <span id="shot-app">Excel</span>
-                    <strong id="shot-title">구매 대상 확인</strong>
+              <div class="player-layout">
+                <div class="player-stage">
+                  <div class="stage-header">
+                    <span id="shot-app">ERP Capture</span>
+                    <strong id="shot-title">구매 요청 등록</strong>
                   </div>
-                  <div id="shot-scene" class="desktop-scene scene-excel">
-                    <div id="focus-box" class="red-focus focus-excel"></div>
-                    <div class="sheet-grid"></div>
-                    <div class="scene-label">승인 상태 품목 선택</div>
+                  <div class="stage-image-wrap">
+                    <img id="stage-image" src="./assets/capture-hero.png" alt="현재 단계 화면" />
+                    <div id="focus-box" class="focus-box focus-capture"></div>
                   </div>
                 </div>
                 <aside class="guide-panel">
-                  <div class="guide-chip">Live Coach</div>
-                  <h3 id="guide-title">구매 대상 확인</h3>
+                  <div class="guide-badge">Live Guide</div>
+                  <h3 id="guide-title">구매 요청 등록</h3>
                   <p id="guide-body">
-                    승인 완료된 품목만 선택합니다. 완료 조건은 승인 여부와 품목번호 확인입니다.
+                    ERP에서 구매 요청서를 작성하고 저장 후 제출 위치까지 함께 기록합니다.
                   </p>
-                  <div class="guide-warning" id="guide-warning">중요: 상태값이 승인인지 먼저 체크</div>
+                  <div id="guide-warning" class="guide-warning">
+                    주의: 결재 금액 기준에 따라 라우팅 확인이 필요합니다.
+                  </div>
                   <ul id="guide-signals" class="signal-list"></ul>
                 </aside>
               </div>
@@ -179,12 +226,8 @@
 
         <section id="workflow" class="workflow-section">
           <div class="section-heading">
-            <p class="eyebrow">Card-first Workspace</p>
-            <h2>타임라인 대신 업무 카드로 편집합니다</h2>
-            <p>
-              영상 편집기처럼 길게 나열하지 않고, 업무 단위 카드를 옮기고 합치고 조건을
-              보완하는 방식으로 표준업무를 정리합니다.
-            </p>
+            <p class="eyebrow">Workflow Cards</p>
+            <h2>업무를 이해하기 쉬운 카드로 바꿉니다</h2>
           </div>
 
           <div class="workflow-grid">
@@ -193,7 +236,7 @@
                 <span>1. 구매 대상 확인</span>
                 <em>Excel</em>
               </div>
-              <p>승인 상태인 품목을 선택합니다.</p>
+              <p>승인 상태인 품목과 수량을 확인합니다.</p>
               <small>완료 조건: 승인 여부와 품목번호 확인</small>
             </article>
             <article class="workflow-card">
@@ -201,94 +244,24 @@
                 <span>2. 구매 요청 등록</span>
                 <em>ERP</em>
               </div>
-              <p>품목번호와 수량을 입력한 뒤 저장 후 제출합니다.</p>
-              <small>주의: VAT 포함 여부를 다시 확인</small>
+              <p>품목번호와 수량을 입력하고 저장 후 제출합니다.</p>
+              <small>주의: 결재 기준 금액과 VAT 포함 여부 확인</small>
             </article>
             <article class="workflow-card">
               <div class="card-topline">
                 <span>3. 견적서 첨부</span>
-                <em>탐색기</em>
+                <em>Explorer</em>
               </div>
-              <p>최근 30일 내 견적서를 첨부합니다.</p>
-              <small>검증: 파일명과 발행일 확인</small>
+              <p>최근 견적서를 선택하고 첨부 파일 유효성을 확인합니다.</p>
+              <small>검증: 파일 형식과 발행일 확인</small>
             </article>
             <article class="workflow-card">
               <div class="card-topline">
                 <span>4. 담당자 통보</span>
                 <em>Mail</em>
               </div>
-              <p>생성된 구매번호와 첨부 완료 사실을 메일로 전달합니다.</p>
+              <p>생성된 구매번호를 담당자에게 전달합니다.</p>
               <small>완료 조건: 구매번호와 수신자 확인</small>
-            </article>
-          </div>
-        </section>
-
-        <section class="feature-section">
-          <div class="section-heading">
-            <p class="eyebrow">Core Product</p>
-            <h2>업무 캡처와 재생에 필요한 핵심 기능만 남겼습니다</h2>
-          </div>
-          <div class="feature-grid">
-            <article>
-              <h3>입력 UI</h3>
-              <p>업무 시작, 업무명 입력, 중요/주의/판단 핫키, 기록 종료.</p>
-            </article>
-            <article>
-              <h3>자동 감지</h3>
-              <p>활성 프로그램, 창 제목, 앱 전환, 복사/붙여넣기, 저장/제출, 첨부 이벤트.</p>
-            </article>
-            <article>
-              <h3>결과 화면</h3>
-              <p>5~10개 카드 단계 생성, 합치기/삭제/이름 수정, 주의사항 자동 표시.</p>
-            </article>
-            <article>
-              <h3>따라 하기 모드</h3>
-              <p>실제 버튼 주변을 강조하며 단계별로 재생하는 초보자 안내 모드.</p>
-            </article>
-            <article>
-              <h3>반복 탐지</h3>
-              <p>같은 입력 3건 이상, 불필요한 왕복, 앱 간 이동 흐름을 개선 포인트로 제시.</p>
-            </article>
-            <article>
-              <h3>스토리텔링</h3>
-              <p>Capture Work라는 정의로 녹화 기술보다 구조화와 재생 경험을 강조.</p>
-            </article>
-          </div>
-        </section>
-
-        <section id="plan" class="plan-section">
-          <div class="section-heading">
-            <p class="eyebrow">Adoption Path</p>
-            <h2>업무 수행에서 표준업무 배포까지</h2>
-          </div>
-          <div class="plan-list">
-            <article>
-              <span>01</span>
-              <div>
-                <h3>업무 수행</h3>
-                <p>사용자가 실제 시스템에서 구매 요청 업무를 한 번 끝까지 수행합니다.</p>
-              </div>
-            </article>
-            <article>
-              <span>02</span>
-              <div>
-                <h3>과정 구조화</h3>
-                <p>단계, 스크린샷, 주의사항, 완료 조건을 카드형 업무 흐름으로 정리합니다.</p>
-              </div>
-            </article>
-            <article>
-              <span>03</span>
-              <div>
-                <h3>가이드 생성</h3>
-                <p>수정된 카드 흐름을 초보자용 따라 하기 가이드와 재생 화면으로 변환합니다.</p>
-              </div>
-            </article>
-            <article>
-              <span>04</span>
-              <div>
-                <h3>배포와 확장</h3>
-                <p>승인된 업무 흐름을 공유하고 반복 경로 데이터를 바탕으로 더 정확하게 보완합니다.</p>
-              </div>
             </article>
           </div>
         </section>
